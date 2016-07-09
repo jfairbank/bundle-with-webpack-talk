@@ -1,0 +1,21 @@
+body {
+  background: #000;
+}
+
+pre {
+  color: #0f0;
+  font-family: Courier, mono;
+  font-size: 45px;
+  line-height: 60px;
+  margin: 0 auto;
+  padding: 40px;
+  text-shadow: 0 0 60px #0f0;
+  white-space: pre-wrap;
+  width: 90%;
+}
+
+pre::selection {
+  background: #fff;
+  color: #000;
+  text-shadow: none;
+}

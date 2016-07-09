@@ -1,0 +1,9 @@
+{
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "./public/examples/load-order/webpack.config.js"
+      }
+    }
+  }
+}

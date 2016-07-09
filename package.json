@@ -1,0 +1,99 @@
+{
+  "name": "bundle-with-webpack-talk",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Resources for the talk \"Bundle the Web with Webpack\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jfairbank/bundle-with-webpack-talk.git"
+  },
+  "author": "Jeremy Fairbank <elpapapollo@gmail.com> (http://jeremyfairbank.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jfairbank/bundle-with-webpack-talk/issues"
+  },
+  "homepage": "https://github.com/jfairbank/bundle-with-webpack-talk#readme",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.10.1",
+    "babel-core": "^6.10.4",
+    "babel-eslint": "^6.1.1",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-class-properties": "^6.10.2",
+    "babel-plugin-transform-export-extensions": "^6.8.0",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "css-loader": "^0.23.1",
+    "eslint": "^3.0.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-config-airbnb-base": "^4.0.0",
+    "eslint-import-resolver-node": "^0.2.1",
+    "eslint-import-resolver-webpack": "^0.3.2",
+    "eslint-plugin-import": "^1.10.2",
+    "eslint-plugin-jsx-a11y": "^1.5.5",
+    "eslint-plugin-react": "^5.2.2",
+    "html-loader": "^0.4.3",
+    "left-pad": "^1.1.1",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "node-sass": "^3.8.0",
+    "pug": "^2.0.0-beta3",
+    "sass-loader": "^4.0.0",
+    "serve-index": "^1.8.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ],
+    "plugins": [
+      "transform-class-properties",
+      "transform-export-extensions",
+      "transform-object-rest-spread"
+    ]
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": [
+      "airbnb",
+      "plugin:import/errors",
+      "plugin:import/warnings"
+    ],
+    "settings": {
+      "import/resolver": "node",
+      "import/ignore": [
+        "node_modules",
+        "\\.(html|css)$"
+      ]
+    },
+    "rules": {
+      "global-require": 0,
+      "no-console": 0,
+      "no-param-reassign": 0,
+      "no-underscore-dangle": 0,
+      "import/no-extraneous-dependencies": [
+        0,
+        {
+          "devDependencies": true
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "angular": "^1.5.7",
+    "express": "^4.14.0",
+    "ng-redux": "^3.3.5-beta.1",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2"
+  }
+}

@@ -1,0 +1,17 @@
+<h2>Hello, my name is {{$ctrl.name}}</h2>
+
+<div class="row">
+  <div class="col-xs-12 col-sm-8">
+    <form>
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control input-lg"
+          id="name"
+          ng-model="$ctrl.name"
+          ng-change="$ctrl.onUpdateName($ctrl.name)"
+        />
+      </div>
+    </form>
+  </div>
+</div>
