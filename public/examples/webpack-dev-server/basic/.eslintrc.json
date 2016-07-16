@@ -1,0 +1,9 @@
+{
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "./public/examples/webpack-dev-server/basic/webpack.config.js"
+      }
+    }
+  }
+}

@@ -1,6 +1,8 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
+  devtool: '#inline-source-map',
   entry: './main.js',
 
   output: {
@@ -28,4 +30,11 @@ module.exports = {
       },
     ],
   },
+
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': '"development"',
+      '__DEV__': true,
+    }),
+  ],
 };

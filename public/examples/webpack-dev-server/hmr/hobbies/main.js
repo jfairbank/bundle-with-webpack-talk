@@ -12,12 +12,7 @@ function logHobbies(hobbies) {
 }
 
 if (module.hot) {
-  module.hot.accept();
-
   module.hot.accept('./hobbies', () => {
-    // logger.clear();
-    // logger.log('Clearing old hobbies...');
-
     const newHobbies = require('./hobbies').default;
     logHobbies(newHobbies);
   });

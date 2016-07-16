@@ -1,10 +1,11 @@
 const path = require('path');
 
 module.exports = {
+  devtool: '#inline-source-map',
   entry: './main.js',
 
   output: {
-    publicPath: 'http://127.0.0.1:8080/assets',
+    publicPath: 'http://127.0.0.1:8080/assets/',
     filename: 'bundle.js',
   },
 
@@ -20,11 +21,6 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel',
-      },
-
-      {
-        test: /\.css$/,
-        loader: 'style!css?modules',
       },
     ],
   },

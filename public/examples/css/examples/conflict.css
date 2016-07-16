@@ -1,0 +1,18 @@
+/* General */
+.highlight {
+  background: rgba(255, 0, 0, 0.2);
+  border: 4px solid rgba(255, 0, 0, 0.4);
+  color: #c00;
+  font-style: italic;
+  padding: 12px;
+}
+
+/* Data Grid */
+.datagrid {
+  font-size: 24px;
+}
+
+.datagrid tr.highlight td {
+  background-color: #ccc;
+  border-top: 1px solid #999;
+}

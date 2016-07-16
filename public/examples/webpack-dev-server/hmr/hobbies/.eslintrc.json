@@ -1,0 +1,9 @@
+{
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "./public/examples/webpack-dev-server/hmr/hobbies/webpack.config.js"
+      }
+    }
+  }
+}

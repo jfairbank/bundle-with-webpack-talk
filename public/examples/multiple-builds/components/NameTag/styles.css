@@ -1,0 +1,22 @@
+.nameTag {
+  /* background: #000; */
+  background: #eee;
+  border: 1px solid #333;
+  border-radius: 4px;
+  /* color: #0f0; */
+  font-family: Helvetica, Arial;
+  padding: 40px;
+  /* text-shadow: 0 0 60px #0f0; */
+}
+
+/* .nameTag h2:before, */
+/* .nameTag h3:before { */
+/*   content: '>\00a0\00a0'; */
+/*   display: inline-block; */
+/* } */
+
+/* .nameTag input { */
+/*   background: #111; */
+/*   color: #0f0; */
+/*   margin-top: 20px; */
+/* } */

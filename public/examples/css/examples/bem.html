@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Conflict</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="bem.css" type="text/css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="header--highlight">Hello World!</h1>
+
+    <br><br>
+
+    <h2>People and Pets:</h2>
+    <table class="table datagrid">
+      <tr>
+        <td>Jeremy</td>
+        <td>Programmer</td>
+      </tr>
+      <tr class="datagrid__row--highlight">
+        <td>Jet</td>
+        <td>Baby</td>
+      </tr>
+      <tr>
+        <td>Tucker</td>
+        <td>Dog</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

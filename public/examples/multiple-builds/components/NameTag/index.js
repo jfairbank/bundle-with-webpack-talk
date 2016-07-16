@@ -1,26 +1,16 @@
 import React, { Component, PropTypes } from 'react';
+import styles from './styles.css';
 
 export default class NameTag extends Component {
-  static propTypes = {
-    name: PropTypes.string.isRequired,
-    job: PropTypes.string.isRequired,
-    onUpdateName: PropTypes.func.isRequired,
-    onUpdateJob: PropTypes.func.isRequired,
-  };
-
   onUpdateName = (e) => {
     this.props.onUpdateName(e.target.value);
-  };
-
-  onUpdateJob = (e) => {
-    this.props.onUpdateJob(e.target.value);
   };
 
   render() {
     const { name } = this.props;
 
     return (
-      <div>
+      <div className={styles.nameTag}>
         <h2>Hello my name is {name}</h2>
 
         <div className="row">
@@ -42,3 +32,8 @@ export default class NameTag extends Component {
     );
   }
 }
+
+NameTag.propTypes = {
+  name: PropTypes.string.isRequired,
+  onUpdateName: PropTypes.func.isRequired,
+};

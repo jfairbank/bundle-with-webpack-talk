@@ -1,0 +1,9 @@
+{
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "./public/examples/source-maps/without/webpack.config.js"
+      }
+    }
+  }
+}
